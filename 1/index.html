@@ -6,12 +6,29 @@ Tip: Investigar el evento window.onload
 -->
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Ejercicio 1</title>
   </head>
   <body>
+	<div class="galeria">
+		<img class="thumb" src="https://picsum.photos/300/300?image=0" alt="">
+		<img class="thumb" src="https://picsum.photos/300/300?image=1" alt="">
+		<img class="thumb" src="https://picsum.photos/300/300?image=2" alt="">
+		<img class="thumb" src="https://picsum.photos/300/300?image=3" alt="">
+	</div>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script>
+		$(window).on('load', function() {
+			alert("Imagenes cargadas");
+		});
+		
+		$(function(){
+			alert("DOM cargado");
+		});
+	</script>
   </body>
 </html>
